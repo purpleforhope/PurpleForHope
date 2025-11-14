@@ -121,5 +121,27 @@
     });
 </script>
 
+ <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <script>
+        // Firebase config
+        const firebaseConfig = {
+            apiKey: "AIzaSyB13apoyzojhPfXgcVwhhASbHV_l5l0ZMA",
+            authDomain: "purpleforhope.firebaseapp.com",
+            projectId: "purpleforhope",
+            storageBucket: "purpleforhope.firebasestorage.app",
+            messagingSenderId: "73131614040",
+            appId: "1:73131614040:web:8e8280326bd581a6064f2d"
+        };
+
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+
+    <!-- Your JS -->
+    <script src="payment.js"></script>
 </body>
 </html>
